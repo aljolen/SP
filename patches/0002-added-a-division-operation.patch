@@ -1,0 +1,39 @@
+From 1e282fe8a5ef39ab383e8150e3388179f1396fe9 Mon Sep 17 00:00:00 2001
+From: aljolen <alina00427@gmail.com>
+Date: Fri, 27 Oct 2023 19:24:02 +0200
+Subject: [PATCH 2/2] added a division operation
+
+---
+ calculator.cpp | 6 ++++++
+ calculator.h   | 1 +
+ 2 files changed, 7 insertions(+)
+
+diff --git a/calculator.cpp b/calculator.cpp
+index 7e4c545..7905434 100644
+--- a/calculator.cpp
++++ b/calculator.cpp
+@@ -14,3 +14,9 @@ int Calculator::Mul (double a, double b)
+ {
+     return a * b + 0.5;
+ }
++
++int Calculator::Div (double a, double b)
++{
++    return a / b + 0.5;
++}
++
+diff --git a/calculator.h b/calculator.h
+index 073cf7a..604f996 100644
+--- a/calculator.h
++++ b/calculator.h
+@@ -7,6 +7,7 @@ class Calculator
+         int Add (int, int);
+         int Mul (double, double);
+         int Sub (double, double);
++	int Div (double, double);
+ };
+ 
+ #endif//CALCULATOR_H
+-- 
+2.34.1
+
